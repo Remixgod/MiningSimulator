@@ -24,7 +24,7 @@ public class Crouch : MonoBehaviour
     private void Update()
     {
         yInput = Input.GetAxisRaw("Vertical");
-
+        
         bool isHeadHitting = HeadDetect();
 
         if((yInput < 0 || isHeadHitting) && player.OnGround)
